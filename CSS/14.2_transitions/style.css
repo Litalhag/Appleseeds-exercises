@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #aaa6a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 25px;
+}
+
+.box {
+  width: 150px;
+  height: 70px;
+  position: relative;
+  border: black 1px solid;
+  margin: 20px;
+  /* overflow: hidden; */
+}
+
+.head-box {
+  display: flex;
+  margin: 10px;
+}
+
+.bottom-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.box-1 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.box-1::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "COOL!";
+  position: absolute;
+  background-color: red;
+  width: 150px;
+  height: 70px;
+  top: 0;
+  transform: translateY(-70px);
+  transition: transform 1.5s;
+}
+
+.box-1:hover::before {
+  transform: translateY(0);
+}
+
+.box-2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.box-2::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  position: absolute;
+  background-color: blue;
+  opacity: 0.9;
+  width: 150px;
+  height: 70px;
+  left: 0;
+  transform: translateX(-150px);
+  transition: transform 1.5s;
+}
+
+.box-2:hover::before {
+  transform: translateX(0);
+  font-weight: bold;
+}
+
+.box-3 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+}
+
+.box-3::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  position: absolute;
+  background-color: yellow;
+  opacity: 0.9;
+  width: 150px;
+  height: 70px;
+  bottom: 200;
+  left: 80;
+  /* top: 100; */
+  transform: rotate(180deg);
+  transition: transform 1.5s;
+}
+
+.box-3:hover::before {
+  transform: rotate(0);
+}
+
+.box-4 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-5 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

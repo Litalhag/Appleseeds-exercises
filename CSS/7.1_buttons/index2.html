@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Roboto:wght@100;300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Buttons</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: rgb(48, 76, 112);
+        font-family: "roboto";
+      }
+
+      h1 {
+        color: #fff;
+      }
+
+      .container {
+        display: block;
+        margin: 10px auto;
+        max-width: 400px;
+        /* border: #fff solid 1px; */
+        /* padding: 5px; */
+      }
+
+      .inner {
+        position: relative;
+        /* top: 10px; */
+        /* width: 100%; */
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      /* First row of buttons: */
+
+      .btn-left {
+        background: rgb(95, 132, 207);
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        padding: 10px;
+        margin: 30px 50px;
+      }
+
+      .btn-left:hover {
+        background: rgb(77, 109, 174);
+        cursor: pointer;
+      }
+
+      .btn-right {
+        background: rgb(255, 217, 0);
+        color: #fff;
+        border: none;
+        border-radius: 2px;
+        padding: 5px;
+        margin: 30px 50px;
+      }
+
+      .btn-right:hover {
+        background: rgba(255, 217, 0, 0.735);
+        cursor: pointer;
+      }
+
+      /* Second row buttons */
+
+      .btn-left2 {
+        background: rgb(90, 193, 89);
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 30px 50px;
+      }
+
+      .btn-left2:hover {
+        background: rgb(70, 150, 69);
+        cursor: pointer;
+      }
+
+      .btn-right2 {
+        background: rgb(223, 73, 98);
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        padding: 5px;
+        margin: 30px 50px;
+      }
+
+      .btn-right2:hover {
+        background: rgb(184, 60, 81);
+        cursor: pointer;
+      }
+
+      /* Third row buttons */
+
+      .btn-left3 {
+        background: none;
+        color: #fff;
+        border: 1px solid rgb(171, 60, 79);
+        border-radius: 2px;
+        padding: 10px;
+        margin: 30px 50px;
+      }
+
+      .btn-left3:hover {
+        background: rgb(171, 60, 79);
+        cursor: pointer;
+      }
+
+      .btn-right3 {
+        background: none;
+        color: #fff;
+        border: 1px solid rgb(166, 59, 166);
+        border-radius: 2px;
+        padding: 5px;
+        margin: 30px 50px;
+      }
+
+      .btn-right3:hover {
+        background: rgb(166, 59, 166);
+        cursor: pointer;
+      }
+
+      /* Fourth row buttons */
+
+      .btn-left4 {
+        background: none;
+        color: #fff;
+        border: 1.5px solid rgb(187, 187, 67);
+        border-radius: 20px;
+        padding: 10px;
+        margin: 30px 50px;
+      }
+
+      .btn-left4:hover {
+        background: rgb(187, 187, 67);
+        cursor: pointer;
+      }
+
+      .btn-right4 {
+        background: none;
+        color: #fff;
+        border: 2px solid rgb(44, 130, 44);
+        border-radius: 20px;
+        padding: 5px;
+        margin: 30px 50px;
+      }
+
+      .btn-right4:hover {
+        background: rgb(44, 130, 44);
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inner">
+        <h1>Flat</h1>
+        <button class="btn-left">Register</button>
+        <button class="btn-right">Submit</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="inner">
+        <h1>Round</h1>
+        <button class="btn-left2">Register</button>
+        <button class="btn-right2">Submit</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="inner">
+        <h1>Flat Ghost</h1>
+        <button class="btn-left3">Register</button>
+        <button class="btn-right3">Submit</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="inner">
+        <h1>Round Ghost</h1>
+        <button class="btn-left4">Register</button>
+        <button class="btn-right4">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>

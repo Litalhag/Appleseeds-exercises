@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 5rem 30rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.item {
+  /* padding: 10px; */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "red red blue blue"
+    "green purple purple purple"
+    " y y y y";
+  grid-gap: 1rem;
+}
+
+.left-red,
+.right-blue,
+.left-green,
+.right-purple,
+.footer {
+  padding: 5rem;
+  /* border: 3px black solid; */
+  border-radius: 10px;
+}
+
+.left-red {
+  grid-area: red;
+}
+
+.right-blue {
+  grid-area: blue;
+}
+
+.left-green {
+  grid-area: green;
+}
+
+.right-purple {
+  grid-area: purple;
+}
+
+.footer {
+  grid-area: y;
+}
+
+.left-red {
+  background: red;
+}
+
+.right-blue {
+  background: blue;
+}
+
+.left-green {
+  background: green;
+}
+
+.right-purple {
+  background: purple;
+}
+
+.footer {
+  background: yellow;
+}

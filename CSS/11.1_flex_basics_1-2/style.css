@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 5px;
+  color: aquamarine;
+  background: black;
+}
+
+.box {
+  text-align: center;
+  padding: 20px;
+  /* margin: 10px; */
+  border: #333 1px solid;
+  height: 5vh;
+}
+
+.box-1 {
+  background: green;
+}
+
+.box-2 {
+  background: blue;
+}
+
+.box-3 {
+  background: red;
+}

@@ -1,0 +1,59 @@
+html {
+  background-image: url("./images/pexels-abdullah-ghatasheh-1631677.jpg");
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img.rounded-corners {
+  border-radius: 30px;
+}
+
+ul {
+  display: table;
+  margin: 0 auto;
+}
+
+.card_bottom_header {
+  background-image: url("./images/pexels-juan-pablo-serrano-arenas-1242348.jpg");
+  background-size: cover;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.card_about {
+  border: 3px solid rgb(215, 195, 167);
+  background: antiquewhite;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.card_social {
+  /* background-image: url("./images/pexels-juan-pablo-serrano-arenas-1242348.jpg");
+  background-size: 200%; */
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.list {
+  position: absolute;
+  top: 180%;
+  height: 33%;
+
+  right: 40%;
+  left: 35%;
+  overflow: auto;
+}
+
+.enhance {
+  color: rgb(39, 28, 28);
+}
+.enhanced {
+  color: rgb(16, 16, 15);
+  background: rgb(205, 120, 120);
+}

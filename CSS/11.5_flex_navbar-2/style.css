@@ -1,0 +1,56 @@
+/* Reset CSS */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+
+a {
+  color: #30396b;
+  text-decoration: none;
+}
+
+h1 {
+  color: #30396b;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Navbar */
+.logo {
+  margin: 0;
+}
+
+.main-nav {
+  margin-top: 5px;
+}
+
+.logo a,
+.main-nav a {
+  padding: 10px 15px;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background: #e1e0e0;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: right;
+  margin: 0 20px;
+}
+
+.list-item {
+  display: flex;
+}

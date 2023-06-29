@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 5rem 30rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.item {
+  /* padding: 10px; */
+}
+
+.grid-container {
+  display: grid;
+  /* border: 5px black solid; */
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  /* grid-template-rows: 3fr 3fr 3fr 3fr; */
+  /* grid-template-rows: 20rem 10rem; */
+  grid-template-areas:
+    "red red red red"
+    "blue blue green green"
+    " blue blue purple purple2";
+  grid-gap: 1rem;
+}
+
+.header-red,
+.box-blue,
+.box-green,
+.box-purple,
+.box-purple2 {
+  padding: 5rem;
+  /* border: 3px black solid; */
+  border-radius: 10px;
+}
+
+.header-red {
+  grid-area: red;
+}
+
+.box-blue {
+  grid-area: blue;
+}
+
+.box-green {
+  grid-area: green;
+}
+
+.box-purple {
+  grid-area: purple;
+}
+
+.box-purple2 {
+  grid-area: purple2;
+}
+
+.header-red {
+  background: red;
+}
+
+.box-blue {
+  background: blue;
+}
+
+.box-green {
+  background: green;
+}
+
+.box-purple {
+  background: purple;
+}
+
+.box-purple2 {
+  background: purple;
+}

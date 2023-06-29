@@ -1,0 +1,93 @@
+html {
+  background: rgb(245, 240, 240);
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  display: table;
+  margin: 0 auto;
+}
+
+.text_h1 {
+  /* h-shadow | v-shadow |blur | color */
+  text-shadow: 0.4rem 0.3rem 0.7rem rgb(129, 122, 120);
+}
+
+h3 {
+  margin: auto;
+  width: 67%;
+  position: relative;
+  top: -48px;
+}
+
+a:hover {
+  /* color: aliceblue; */
+  font-size: 17px;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(16, 15, 13);
+}
+
+a:active {
+  color: aliceblue;
+}
+
+.text_head {
+  color: rgb(16, 15, 13);
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+
+.card_header {
+  background-color: rgb(229, 227, 226);
+  background-size: cover;
+  border: 10px solid rgb(229, 227, 226);
+  margin: auto;
+  /* padding: 20px;
+  margin-bottom: 10px; */
+  /* text-align: center; */
+}
+
+#image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-radius: 30px;
+}
+
+.circular_image {
+  clip-path: circle(45px at 40px 40px);
+}
+
+.box {
+  background-image: url("./images/pexels-pixabay-164828.jpg");
+  background-size: cover;
+  margin: auto;
+  padding: 200px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.text_box {
+  color: rgb(16, 15, 13);
+  top: -140px;
+  position: relative;
+
+  /* text-align: center; */
+}
+
+.card_footer {
+  background-color: #444444;
+  border: solid #444444;
+  margin: auto;
+  height: 300px;
+  padding: 10px 20px;
+  margin: 5px 0px;
+}

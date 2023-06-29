@@ -1,0 +1,152 @@
+html {
+  background-color: #3d527b;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin: 100px auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.inner {
+  position: relative;
+  top: 10px;
+}
+
+.btn_left {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  background: #6689d1;
+  border: 1px;
+  border-radius: none;
+  padding: 10px 15px;
+  /* width: fit-content; */
+  position: absolute;
+  left: 250px;
+}
+
+.btn_left:hover {
+  color: aliceblue;
+  background: #476092;
+}
+
+.btn_right {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  background: #dfcd67;
+  border: 1px;
+  border-radius: none;
+  padding: 10px 15px;
+  /* width: fit-content; */
+  position: absolute;
+  right: 250px;
+}
+
+.btn_right:hover {
+  color: #f4f4f4;
+  background: #ad9f51;
+}
+
+.btn_left2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  background: #7fd166;
+  border: 1px;
+  border-radius: 40px;
+  padding: 10px 15px;
+  /* width: fit-content; */
+  position: absolute;
+  left: 250px;
+}
+
+.btn_left2:hover {
+  color: aliceblue;
+  background: #568d45;
+}
+
+.btn_right2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  background: #df6777;
+  border: 1px;
+  border-radius: 40px;
+  padding: 10px 15px;
+  /* width: fit-content; */
+  position: absolute;
+  right: 250px;
+}
+
+.btn_right2:hover {
+  color: #f4f4f4;
+  background: #a14b57;
+}
+
+.btn_left3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  background: none;
+  border: 1px solid palevioletred;
+  padding: 10px 15px;
+  /* width: fit-content; */
+  position: absolute;
+  left: 250px;
+}
+
+.btn_left3:hover {
+  color: aliceblue;
+  background: palevioletred;
+}
+
+.btn_right3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  background: none;
+  border: 1px solid purple;
+  padding: 10px 15px;
+  /* width: fit-content; */
+  position: absolute;
+  right: 250px;
+}
+
+.btn_right3:hover {
+  color: #f4f4f4;
+  background: purple;
+}
+
+.btn_left4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  background: none;
+  border: 1px solid rgb(217, 221, 109);
+  border-radius: 40px;
+  padding: 10px 15px;
+  /* width: fit-content; */
+  position: absolute;
+  left: 250px;
+}
+
+.btn_left4:hover {
+  color: aliceblue;
+  background: rgb(217, 221, 109);
+}
+
+.btn_right4 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  background: none;
+  border: 1px solid rgb(24, 149, 51);
+  border-radius: 40px;
+  padding: 10px 15px;
+  /* width: fit-content; */
+  position: absolute;
+  right: 250px;
+}
+
+.btn_right4:hover {
+  color: #f4f4f4;
+  background: rgb(24, 149, 51);
+}

@@ -1,0 +1,17 @@
+#outer {
+  position: relative;
+  top: 30px;
+  left: 50px;
+  width: 100px;
+  height: 100px;
+  background: darkcyan;
+  margin: 50px;
+}
+#inner {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: lightgreen;
+  position: absolute;
+  top: -50px;
+}
