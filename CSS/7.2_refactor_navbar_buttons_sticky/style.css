@@ -14,12 +14,6 @@ ul {
 .text_h1 {
   /* h-shadow | v-shadow |blur | color */
   text-shadow: 0.4rem 0.3rem 0.7rem rgb(129, 122, 120);
-  font-size: 32px;
-  font-weight: bold;
-}
-
-.text_h3 {
-  font-weight: bold;
 }
 
 .navbar {
@@ -30,8 +24,7 @@ ul {
   background: rgb(215, 215, 215);
   border-radius: 5px;
   overflow: auto;
-  position: sticky;
-  top: 1px;
+  /* position: sticky; */
 }
 
 .navbar li {
@@ -50,6 +43,13 @@ ul {
   color: #f4f4f4;
 }
 
+h3 {
+  margin: auto;
+  width: 65%;
+  position: relative;
+  top: -48px;
+}
+
 .text_head {
   color: rgb(16, 15, 13);
   margin: auto;
@@ -60,10 +60,14 @@ ul {
 
 .card_header {
   background-color: rgb(229, 227, 226);
-
+  /* background-size: cover; */
   border: 5px solid rgb(229, 227, 226);
   padding: auto;
   width: 98%;
+  /*margin: auto; */
+  /* padding: 20px; */
+  /* margin-bottom: 10px; */
+  /* text-align: center; */
 }
 
 #image {
@@ -81,7 +85,7 @@ ul {
   background-image: url("./images/pexels-pixabay-164828.jpg");
   background-size: cover;
   margin: auto;
-  padding: 75px 10px;
+  padding: 200px;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -90,9 +94,8 @@ ul {
   color: rgb(16, 15, 13);
   top: -140px;
   position: relative;
-  /* width: 40%;
-  margin: auto;
-  padding: 5px; */
+
+  /* text-align: center; */
 }
 
 .card_footer {
