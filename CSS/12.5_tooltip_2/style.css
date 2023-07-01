@@ -48,7 +48,6 @@ html {
 }
 
 /* Tooltip on Top */
-
 .tooltip.top::before {
   bottom: calc(100% + 5px);
   left: 50%;
@@ -64,7 +63,6 @@ html {
 }
 
 /* Tooltip on right */
-
 .tooltip.right::before {
   top: 50%;
   left: calc(100% + 5px);

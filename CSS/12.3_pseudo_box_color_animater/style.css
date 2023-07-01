@@ -6,8 +6,12 @@
 
 .container {
   background: #d7d3d3;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 .box {
@@ -29,6 +33,27 @@
   content: "";
   position: absolute;
   background-color: blueviolet;
-  /* height: 100%; */
-  /* width: 50%; */
+}
+
+.box-txt {
+  border: black 3px solid;
+  background: black;
+  color: #fff;
+  text-align: center;
+  width: 200px;
+  margin: 0 10px 40px 0;
+  padding: 20px 20px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.box-txt::after {
+  content: "";
+  position: absolute;
+  border: black 3px solid;
+  background: black;
+  left: 83%;
+  bottom: 7px;
+  width: 16px;
+  height: 32px;
 }

@@ -1,0 +1,88 @@
+body {
+  height: 100vh;
+  /* padding: 5px; */
+}
+
+.grid-container {
+  height: 100%;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas:
+    "p-one p-one p-two p-two p-two p-three p-four p-four"
+    "p-one p-one p-two p-two p-two p-three p-four p-four"
+    "p-five p-five p-two p-two p-two p-six p-six p-seven"
+    "p-five p-five p-eight p-eight p-nine p-six p-six p-seven"
+    "p-five p-five p-eight p-eight p-ten p-ten p-ten p-seven"
+    "p-eleven p-twelve p-twelve p-thirteen p-ten p-ten p-ten p-fourteen"
+    "p-eleven p-twelve p-twelve p-thirteen p-ten p-ten p-ten item-fourteen";
+}
+
+.p-one {
+  grid-area: p-one;
+  background: url("./img/1.jpeg") no-repeat center center/cover;
+}
+
+.p-two {
+  grid-area: p-two;
+  background: url("./img/2.jpeg") no-repeat center center/cover;
+}
+
+.p-three {
+  grid-area: p-three;
+  background: url("./img/3.jpeg") no-repeat center center/cover;
+}
+
+.p-four {
+  grid-area: p-four;
+  background: url("./img/4.jpeg") no-repeat center center/cover;
+}
+
+.p-five {
+  grid-area: p-five;
+  background: url("./img/5.jpeg") no-repeat center center/cover;
+}
+
+.p-six {
+  grid-area: p-six;
+  background: url("./img/6.jpeg") no-repeat center center/cover;
+}
+
+.p-seven {
+  grid-area: p-seven;
+  background: url("./img/7.jpeg") no-repeat center center/cover;
+}
+
+.p-eight {
+  grid-area: p-eight;
+  background: url("./img/8.jpeg") no-repeat center center/cover;
+}
+
+.p-nine {
+  grid-area: p-nine;
+  background: url("./img/9.jpeg") no-repeat center center/cover;
+}
+
+.p-ten {
+  grid-area: p-ten;
+  background: url("./img/10.jpeg") no-repeat center center/cover;
+}
+
+.p-eleven {
+  grid-area: p-eleven;
+  background: url("./img/11.jpeg") no-repeat center center/cover;
+}
+
+.p-twelve {
+  grid-area: p-twelve;
+  background: url("./img/12.jpeg") no-repeat center center/cover;
+}
+
+.p-thirteen {
+  grid-area: p-thirteen;
+  background: url("./img/13.jpeg") no-repeat center center/cover;
+}
+
+.p-fourteen {
+  grid-area: p-fourteen;
+  background: url("./img/14.jpeg") no-repeat center center/cover;
+}

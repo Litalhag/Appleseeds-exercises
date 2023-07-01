@@ -45,53 +45,53 @@ a {
   grid-template-areas:
     "red red blue blue"
     "green purple purple purple"
-    " y y y y";
+    " footer footer footer footer";
   grid-gap: 1rem;
 }
 
-.left-red,
-.right-blue,
-.left-green,
-.right-purple,
+.red,
+.blue,
+.green,
+.purple,
 .footer {
   padding: 5rem;
   /* border: 3px black solid; */
   border-radius: 10px;
 }
 
-.left-red {
+.red {
   grid-area: red;
 }
 
-.right-blue {
+.blue {
   grid-area: blue;
 }
 
-.left-green {
+.green {
   grid-area: green;
 }
 
-.right-purple {
+.purple {
   grid-area: purple;
 }
 
 .footer {
-  grid-area: y;
+  grid-area: footer;
 }
 
-.left-red {
+.red {
   background: red;
 }
 
-.right-blue {
+.blue {
   background: blue;
 }
 
-.left-green {
+.green {
   background: green;
 }
 
-.right-purple {
+.purple {
   background: purple;
 }
 

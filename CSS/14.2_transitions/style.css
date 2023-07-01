@@ -19,7 +19,6 @@ body {
   position: relative;
   border: black 1px solid;
   margin: 20px;
-  /* overflow: hidden; */
 }
 
 .head-box {
@@ -79,6 +78,7 @@ body {
   width: 150px;
   height: 70px;
   left: 0;
+  z-index: -1;
   transform: translateX(-150px);
   transition: transform 1.5s;
 }
@@ -93,7 +93,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .box-3::before {
@@ -103,18 +103,15 @@ body {
   content: "";
   position: absolute;
   background-color: yellow;
-  opacity: 0.9;
-  width: 150px;
-  height: 70px;
-  bottom: 200;
-  left: 80;
-  /* top: 100; */
-  transform: rotate(180deg);
+  width: 70px;
+  height: 150px;
+  z-index: -1;
+  transform: translate(-111px, 109px);
   transition: transform 1.5s;
 }
 
 .box-3:hover::before {
-  transform: rotate(0);
+  transform: rotate(-90deg);
 }
 
 .box-4 {
@@ -122,6 +119,31 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.box-4::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "SCALE";
+  position: absolute;
+  background-color: black;
+  color: white;
+  width: 150px;
+  height: 70px;
+  font-size: 5px;
+  z-index: 2;
+  transform: scale(13);
+  transition: all 1.5s ease-in-out;
+  opacity: 0;
+}
+
+.box-4:hover::before {
+  transform: scale(5);
+  opacity: 1;
+  width: 150px;
+  height: 70px;
 }
 
 .box-5 {
@@ -129,4 +151,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+}
+
+.box-5:hover {
+  transform: skew(20deg);
+}
+
+.box-5::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  position: absolute;
+  background-color: rgb(184, 16, 145);
+  width: 150px;
+  height: 70px;
+  z-index: -1;
+  transform: scale(6);
+  transition: all 2s ease-in-out;
+  opacity: 0;
+}
+
+.box-5:hover::before {
+  opacity: 1;
+  transform: scale(1) skew(180deg, 180deg);
+}
+
+.box-5 span:hover {
+  transform: skewY(20deg);
 }

@@ -4,8 +4,8 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
@@ -17,28 +17,24 @@ html {
   align-items: center;
 }
 
-.box h3 {
-  display: flex;
-  justify-content: center;
+.box p {
+  font-size: 35px;
 }
 
 .box {
+  position: relative;
   background: black;
+  border: 3px solid red;
+  padding: 15rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  border: 3px solid rgb(247, 110, 133);
-  padding: 15rem;
-  font-size: 1.5rem;
 }
 
 .box::before {
   content: "";
   position: absolute;
-  top: 25%;
-  left: -3px;
-  border: 3px solid rgb(0, 0, 0);
+  border: 5px solid black;
   height: 50%;
   width: 100%;
 }
@@ -46,9 +42,7 @@ html {
 .box::after {
   content: "";
   position: absolute;
-  border: 3px solid rgb(0, 0, 0);
-  top: -3px;
-  left: 25%;
+  border: 3px solid black;
   height: 100%;
   width: 50%;
 }

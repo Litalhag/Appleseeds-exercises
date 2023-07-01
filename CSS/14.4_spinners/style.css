@@ -1,0 +1,314 @@
+:root {
+  --primary-color: #4b4747;
+  --secondary-color: #fff;
+  --bg-color: rgb(197, 142, 83);
+  --bg-color2: rgb(189, 165, 139);
+  --opacity-color: rgb(89, 77, 61);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: 300;
+  line-height: 1.2;
+  color: var(--secondary-color);
+}
+
+/* Header */
+.hero {
+  background: url("./img/pexels-karolina-grabowska-5477580.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  position: relative;
+  color: var(--primary-color);
+  border: #fff 5px solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero .content h1 {
+  font-size: 55px;
+  text-shadow: 0.1rem 0.4rem var(--opacity-color);
+  text-align: center;
+}
+
+.hero .content p {
+  font-size: 30px;
+  margin: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0.1rem 0.2rem var(--secondary-color);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(189, 165, 139, 0.2);
+}
+
+.hero * {
+  z-index: 10;
+}
+
+/* Head*/
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  background-color: transparent;
+  color: var(--primary-color);
+  opacity: 0.7;
+  height: 32rem;
+}
+
+#nav {
+  display: flex;
+  flex-direction: row;
+}
+
+#nav ul li a {
+  display: flex;
+  justify-content: center;
+  border: var(--bg-color2) 5px solid;
+  color: var(--secondary-color);
+  padding: 10px 20px;
+  margin: 15px 5px;
+  background: var(--primary-color);
+  border-radius: 1rem;
+}
+
+#nav ul li a:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: var(--bg-color2) 5px solid;
+}
+
+button {
+  width: 6.5rem;
+  height: 2.5rem;
+  background-color: var(--opacity-color);
+  border-radius: 0.5rem;
+}
+
+button a {
+  color: var(--secondary-color);
+}
+
+button:hover {
+  background: var(--bg-color);
+  color: var(--opacity-color);
+}
+
+/* Animations */
+.section {
+  border: #fff 5px solid;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: black;
+}
+
+.circle_left {
+  margin: 3rem;
+  height: 150px;
+  width: 150px;
+  background: transparent;
+  border-radius: 50%;
+  border: 0.5rem solid var(--opacity-color);
+  border-bottom: 0.5rem solid var(--bg-color);
+  animation: circle_animation 3s infinite linear;
+}
+
+@keyframes circle_animation {
+  to {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+
+.spin {
+  margin: 3rem;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: transparent;
+  border-right: 0.5rem solid var(--bg-color);
+  animation: spin 1.3s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dot {
+  margin: 3rem;
+  padding: 0.5rem 0;
+  display: flex;
+}
+
+.dot-1 {
+  margin: 3rem;
+  background-color: var(--opacity-color);
+  border-radius: 50%;
+  padding: 1.5rem;
+  animation: dot-1 1s infinite;
+}
+
+.dot-2 {
+  margin: 3rem;
+  background-color: var(--opacity-color);
+  border-radius: 50%;
+  padding: 1.5rem;
+  animation: dot-2 1s infinite;
+}
+
+.dot-3 {
+  margin: 3rem;
+  background-color: var(--opacity-color);
+  border-radius: 50%;
+  padding: 1.5rem;
+  animation: dot-3 1s infinite;
+}
+
+@keyframes dot-1 {
+  0%,
+  100% {
+    background-color: var(--opacity-color);
+  }
+
+  35% {
+    background-color: var(--bg-color2);
+  }
+
+  70% {
+    background-color: var(--bg-color);
+  }
+}
+
+@keyframes dot-2 {
+  0%,
+  100% {
+    background-color: var(--bg-color);
+  }
+
+  35% {
+    background-color: var(--opacity-color);
+  }
+
+  70% {
+    background-color: var(--bg-color2);
+  }
+}
+
+@keyframes dot-3 {
+  0%,
+  100% {
+    background-color: var(--bg-color2);
+  }
+
+  35% {
+    background-color: var(--bg-color);
+  }
+
+  70% {
+    background-color: var(--opacity-color);
+  }
+}
+
+.dot {
+  margin: 3rem;
+  padding: 0.5rem 0;
+  display: flex;
+}
+
+.another-dot-1 {
+  margin: 3rem;
+  background-color: var(--opacity-color);
+  border-radius: 50%;
+  padding: 1.5rem;
+  transform: scale(0);
+  animation: size-dot-1 1s infinite;
+}
+
+.another-dot-2 {
+  margin: 3rem;
+  background-color: var(--opacity-color);
+  border-radius: 50%;
+  padding: 1.5rem;
+  transform: scale(0);
+  animation: size-dot-2 1s infinite;
+}
+
+.another-dot-3 {
+  margin: 3rem;
+  background-color: var(--opacity-color);
+  border-radius: 50%;
+  padding: 1.5rem;
+  transform: scale(0);
+  animation: size-dot-3 1s infinite;
+}
+
+@keyframes size-dot-1 {
+  0% {
+    transform: scale(0);
+    background-color: var(--opacity-color);
+  }
+  25% {
+    transform: scale(1);
+    background-color: var(--bg-color2);
+  }
+}
+
+@keyframes size-dot-2 {
+  0% {
+    transform: scale(0);
+    background-color: var(--opacity-color);
+  }
+  50% {
+    transform: scale(1);
+    background-color: var(--bg-color2);
+  }
+}
+
+@keyframes size-dot-3 {
+  0% {
+    transform: scale(0);
+    background-color: var(--opacity-color);
+  }
+  75% {
+    transform: scale(1);
+    background-color: var(--bg-color2);
+  }
+}
